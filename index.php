@@ -103,4 +103,5 @@ $results->year = $year;
 echo $OUTPUT->header();
 echo $OUTPUT->render_from_template('local_staffmanager/searchbar', $obj);
 echo $OUTPUT->render_from_template('local_staffmanager/searchresults', $results);
+echo $OUTPUT->download_dataformat_selector('Download', 'download.php', 'dataformat', $conditions_array);
 echo $OUTPUT->footer();

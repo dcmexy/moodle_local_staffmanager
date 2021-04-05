@@ -21,8 +21,20 @@
  * @copyright  2021 Dean Chimezie
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
- $string['pluginname'] = 'Staff Manager';
- $string['staffmanager'] = 'Staff manager';
- $string['rates'] = 'Rates manager';
- $string['searchstaff'] = 'Search Staff';
+$string['pluginname'] = 'Staff Manager';
+$string['staffmanager'] = 'Staff manager';
+$string['rates'] = 'Rates manager';
+$string['searchstaff'] = 'Search Staff';
+$string['graderfirstname'] = 'Grader first name';
+$string['graderlastname'] = 'Grader last name';
+$string['graderemail'] = 'Grader email';
+$string['coursename'] = 'Course name';
+$string['modulename'] = 'Module name';
+$string['datetimemodified'] = 'Date modified';
+$string['studentfirstname'] = 'Student first name';
+$string['studentlastname'] = 'Student last name';
+$string['studentemail'] = 'Student email';
+$string['gradeitemname'] = 'Grade item name';
+$string['finalgrade'] = 'Final grade';
+$string['staffmanager:admin'] = "Staff manager admin";
+$string['value'] = "Value";
