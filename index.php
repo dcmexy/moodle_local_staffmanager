@@ -31,6 +31,14 @@ $PAGE->requires->js('/local/staffmanager/assets/js/staffmanager.js');
 
 require_login();
 
+if(!has_capability('local/staffmanager:admin', context_system::instance()))
+{
+  echo $OUTPUT->header();
+  echo "<h3>You do not have permission to view this page.</h3>";
+  echo $OUTPUT->footer();
+  exit;
+}
+
 $month = optional_param('month', '', PARAM_TEXT);
 $year = optional_param('year', '', PARAM_TEXT);
 

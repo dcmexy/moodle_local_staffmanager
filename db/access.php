@@ -15,19 +15,19 @@
 // along with Moodle.  If not, see https://www.gnu.org/licenses/.
 
 /**
- * Version details.
+ * Plugin capabilities.
  *
  * @package    local_staffmanager
  * @copyright  2021 Dean Chimezie
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die;
-
-//$plugin->version = yyyymmddxx
-$plugin->version   = 2021032701;
-$plugin->release   = '1.0';
-$plugin->cron      = 0;
-$plugin->maturity  = MATURITY_STABLE;
-$plugin->requires  = 2020110902.02; // Moodle 3.10 release and upwards.
-$plugin->component = 'local_staffmanager';
+$capabilities = array(
+  'local/staffmanager:admin' => array(
+    'captype' => 'write',
+    'contextlevel' => CONTEXT_SYSTEM,
+    'archetypes' => array(
+        'manager'=> CAP_ALLOW,
+    ),
+  )
+);

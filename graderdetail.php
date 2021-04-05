@@ -29,6 +29,14 @@ $PAGE->set_context(context_system::instance());
 
 require_login();
 
+if(!has_capability('local/staffmanager:admin', context_system::instance()))
+{
+  echo $OUTPUT->header();
+  echo "<h3>You do not have permission to view this page.</h3>";
+  echo $OUTPUT->footer();
+  exit;
+}
+
 $pagetitle = get_string('staffmanager', 'local_staffmanager');
 $pageheading = get_string('searchstaff', 'local_staffmanager');
 
